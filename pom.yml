@@ -1,0 +1,75 @@
+modelVersion: 4.0.0
+
+parent:
+  groupId:    nz.co.aetheric.maven
+  artifactId: maven-parent-global
+  version:    1.1.0
+
+groupId:    nz.co.aetheric
+artifactId: kotlin-testing
+version:    0.0.1-SNAPSHOT
+packaging:  pom
+
+name:        "Kotlin: Testing"
+description: A simple aggregator pom for test dependencies.
+url:         https://www.aetheric.co.nz/kotlin-testing
+
+properties:
+
+  version.slf4j:          1.7.25
+  version.kotlin:         1.1.51
+  version.spek:           1.1.5
+  version.junit:          5.0.0-ALPHA
+  version.junit.platform: 1.0.1
+
+dependencyManagement:
+  dependencies:
+
+    - groupId:    org.jetbrains.kotlin
+      artifactId: kotlin-stdlib
+      version:    ${version.kotlin}
+
+    - groupId:    org.slf4j
+      artifactId: slf4j-log4j12
+      version:    ${version.slf4j}
+
+    - groupId:    com.winterbe
+      artifactId: expekt
+      version:    0.5.0
+
+    - groupId:    org.jetbrains.kotlin
+      artifactId: kotlin-test
+      version:    ${version.kotlin}
+
+    - groupId:    org.jetbrains.kotlin
+      artifactId: kotlin-test-junit
+      version:    ${version.kotlin}
+
+    - groupId:    org.jetbrains.kotlin
+      artifactId: kotlin-reflect
+      version:    ${version.kotlin}
+
+    - groupId:    org.jetbrains.spek
+      artifactId: spek-api
+      version:    ${version.spek}
+
+    - groupId:    org.jetbrains.spek
+      artifactId: spek-subject-extension
+      version:    ${version.spek}
+
+    - groupId:    org.jetbrains.spek
+      artifactId: spek-junit-platform-engine
+      version:    ${version.spek}
+
+    - groupId:    org.junit.platform
+      artifactId: junit-platform-engine
+      version:    ${version.junit.platform}
+
+issueManagement:
+  url: https://github.com/aetheric/kotlin-testing/issues
+
+scm:
+  url:                 https://github.com/aetheric/kotlin-testing
+  connection:          scm:git:git://github.com/aetheric/kotlin-testing.git
+  developerConnection: scm:git:git@github.com:aetheric/kotlin-testing.git
+  tag:                 master
