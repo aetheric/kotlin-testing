@@ -22,48 +22,47 @@ properties:
   version.junit:          5.0.0-ALPHA
   version.junit.platform: 1.0.1
 
-dependencyManagement:
-  dependencies:
+dependencies:
 
-    - groupId:    org.jetbrains.kotlin
-      artifactId: kotlin-stdlib
-      version:    ${version.kotlin}
+  - groupId:    org.jetbrains.kotlin
+    artifactId: kotlin-stdlib
+    version:    ${version.kotlin}
 
-    - groupId:    org.slf4j
-      artifactId: slf4j-log4j12
-      version:    ${version.slf4j}
+  - groupId:    org.slf4j
+    artifactId: slf4j-log4j12
+    version:    ${version.slf4j}
 
-    - groupId:    com.winterbe
-      artifactId: expekt
-      version:    0.5.0
+  - groupId:    com.winterbe
+    artifactId: expekt
+    version:    0.5.0
 
-    - groupId:    org.jetbrains.kotlin
-      artifactId: kotlin-test
-      version:    ${version.kotlin}
+  - groupId:    org.jetbrains.kotlin
+    artifactId: kotlin-test
+    version:    ${version.kotlin}
 
-    - groupId:    org.jetbrains.kotlin
-      artifactId: kotlin-test-junit
-      version:    ${version.kotlin}
+  - groupId:    org.jetbrains.kotlin
+    artifactId: kotlin-test-junit
+    version:    ${version.kotlin}
 
-    - groupId:    org.jetbrains.kotlin
-      artifactId: kotlin-reflect
-      version:    ${version.kotlin}
+  - groupId:    org.jetbrains.kotlin
+    artifactId: kotlin-reflect
+    version:    ${version.kotlin}
 
-    - groupId:    org.jetbrains.spek
-      artifactId: spek-api
-      version:    ${version.spek}
+  - groupId:    org.jetbrains.spek
+    artifactId: spek-api
+    version:    ${version.spek}
 
-    - groupId:    org.jetbrains.spek
-      artifactId: spek-subject-extension
-      version:    ${version.spek}
+  - groupId:    org.jetbrains.spek
+    artifactId: spek-subject-extension
+    version:    ${version.spek}
 
-    - groupId:    org.jetbrains.spek
-      artifactId: spek-junit-platform-engine
-      version:    ${version.spek}
+  - groupId:    org.jetbrains.spek
+    artifactId: spek-junit-platform-engine
+    version:    ${version.spek}
 
-    - groupId:    org.junit.platform
-      artifactId: junit-platform-engine
-      version:    ${version.junit.platform}
+  - groupId:    org.junit.platform
+    artifactId: junit-platform-engine
+    version:    ${version.junit.platform}
 
 issueManagement:
   url: https://github.com/aetheric/kotlin-testing/issues
